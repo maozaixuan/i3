@@ -1,14 +1,14 @@
 # i3 config file (v4)
 set $mod Mod4
 
-exec --no-startup-id  feh --bg-scale /home/alan/pictures/fulimao/balabala.jpg
+exec --no-startup-id  feh --bg-max /home/alan/Downloads/bg.jpg
 bindsym Print exec shutter -f -e -o /home/alan/pictures/shot/%y-%m-%d-%T.png
 bindsym $mod+Print exec shutter -s -e -o /home/alan/pictures/shot/%y-%m-%d-%T.png
 font pango:Monaco 10
 
 
 exec --no-startup-id compton -b
-bindsym $mod+Return exec --no-startup-id terminator
+bindsym $mod+Return exec --no-startup-id terminator 
 
 bindsym $mod+q kill
 
