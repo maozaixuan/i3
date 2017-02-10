@@ -2,8 +2,8 @@
 set $mod Mod4
 
 exec --no-startup-id  feh --bg-max /home/alan/Downloads/bg.jpg
-bindsym Print exec shutter -f -e -o /home/alan/pictures/shot/%y-%m-%d-%T.png
-bindsym $mod+Print exec shutter -s -e -o /home/alan/pictures/shot/%y-%m-%d-%T.png
+bindsym Print exec scrot /home/alan/pictures/shot/%y-%m-%d-%T.png
+bindsym $mod+Print exec scrot -s /home/alan/pictures/shot/%y-%m-%d-%T.png
 font pango:Monaco 10
 
 
@@ -55,7 +55,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -140,7 +140,7 @@ client.background       #ffffff
 set $WS1 1:WorkSpace
 set $WS2 2:FireFox
 set $WS3 3:Music
-set $WS4 4:Obs
+set $WS4 4:Book
 set $WS5 5:name
 set $WS6 6:name
 set $WS7 7:name
