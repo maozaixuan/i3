@@ -139,8 +139,8 @@ client.background       #ffffff
 
 set $WS1 1:WorkSpace
 set $WS2 2:FireFox
-set $WS3 3:Music
-set $WS4 4:Book
+set $WS3 3:Book
+set $WS4 4:Music
 set $WS5 5:name
 set $WS6 6:name
 set $WS7 7:name
@@ -151,7 +151,7 @@ set $WS0 0:name
 
 #assign [class="terminator"] $WS1
 #assign [class="Firefox"] $WS2
-assign [class="Steam"] $WS4
+#assign [class="Evince"] $WS3
 new_window none
 new_float normal
 hide_edge_borders both
