@@ -4,7 +4,7 @@ set $mod Mod4
 exec --no-startup-id  feh --bg-max /home/alan/Downloads/bg.jpg
 bindsym Print exec scrot /home/alan/pictures/shot/%y-%m-%d-%T.png
 bindsym $mod+Print exec scrot -s /home/alan/pictures/shot/%y-%m-%d-%T.png
-font pango:Monaco 10
+font pango:Monaco 10 
 
 
 exec --no-startup-id compton -b
@@ -14,6 +14,10 @@ bindsym $mod+q kill
 
 bindsym $mod+a exec i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id dmenu_run
+
+#for sound control
+bindsym XF86AudioRaiseVolume exec amixer -c 1 set Master playback 5+
+bindsym XF86AudioLowerVolume exec amixer -c 1 set Master playback 5-
 
 # change focus
 
